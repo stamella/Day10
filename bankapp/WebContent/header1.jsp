@@ -31,7 +31,7 @@
 		<a href="fundTransfer.jsp">Transfer money</a>
 		&nbsp
 		
-		<a href="checkBalance">Balance Enquiry</a>
+		<a href="balanceEnquiry.jsp">Balance Enquiry</a>
 		&nbsp
 		
 		<a href="welcome.jsp">Logout</a>

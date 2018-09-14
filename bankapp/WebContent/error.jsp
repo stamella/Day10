@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Check Balance</title>
+<title>Insert title here</title>
+<%@ include file="header.jsp" %>
 </head>
-<body bgcolor="pink">
-<br><br><br><br>
- <h1>Your Current Balance is: ${sessionScope.Customer.customerAccount.accountBalance} </h1>
-
+<body style="text-align:center">
+<br><br><br><br><br>
+<h4>Something went WRONG :( </h4>
 </body>
 </html>

@@ -15,19 +15,22 @@
 	
 	<h1>Edit your Details</h1>
 		<label> Customer Id: </label>
-		<input type="number" value="${customer.customerId }" name="customerId" readonly>
+		<input type="number" name="customerId" value="${Customer.customerId }" readonly>
 		<br> <br>
 		<label>Customer Name: </label> 
-		<input type="text" name="customerName" placeholder="${customer.customerName}" size="15" required /> 
+		<input type="text" name="customerName" placeholder="${Customer.customerName}" size="15" required /> 
 		<br> <br>
 		<label> Email Id: </label> 
-		<input type="email" name="emailId" placeholder="${customer.emailId}"size="10" required /> 
+		<input type="email" name="emailId" placeholder="${Customer.emailId}"size="10" required /> 
 		<br> <br>
         <label> Address: </label> 
-		<input type="text" name="address" placeholder="${customer.address}"size="15" required /> 
+		<input type="text" name="address" placeholder="${Customer.address}"size="15" required /> 
 		<br> <br>
-		<label> Date Of Birth: </label> 
-		<input type="date" name="dob" placeholder="${customer.dob}"size="10" required /> 
+		<label> Customer Password: </label>
+		<input type="password"  name="password" value="${Customer.password}" readonly/>
+		<br> <br>
+		<label>Customer Date Of Birth: </label> 
+		<input type="date" name="dob" placeholder="${Customer.customerDateOfBirth}"size="10" required /> 
 		<br> <br>
 		
 		<input type="submit" name="update">

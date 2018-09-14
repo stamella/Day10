@@ -1,27 +1,30 @@
 package com.capgemini.bankapp.model;
 
+import java.time.LocalDate;
+
 public class Customer {
 	private long customerId;
 	private String customerName;
 	private String password;
 	private String emailId;
 	private String address;
-	private String dob;
-	private String account ;
-	
-	public Customer() {
-		super();
-	}
-	public Customer(long customerId, String customerName, String password, String emailId, String address, String dob,
-			String account) {
+	private LocalDate customerDateOfBirth;
+	private BankAccount customerAccount;
+
+	public Customer(long customerId, String customerName, String password, String emailId, String address,
+			LocalDate customerDateOfBirth, BankAccount customerAccount) {
 		super();
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.password = password;
 		this.emailId = emailId;
 		this.address = address;
-		this.dob = dob;
-		this.account = account;
+		this.customerDateOfBirth = customerDateOfBirth;
+		this.customerAccount = customerAccount;
+	}
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	public long getCustomerId() {
 		return customerId;
@@ -53,23 +56,23 @@ public class Customer {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getDob() {
-		return dob;
+	public LocalDate getCustomerDateOfBirth() {
+		return customerDateOfBirth;
 	}
-	public void setDob(String dob) {
-		this.dob = dob;
+	public void setCustomerDateOfBirth(LocalDate customerDateOfBirth) {
+		this.customerDateOfBirth = customerDateOfBirth;
 	}
-	public String getAccount() {
-		return account;
+	public BankAccount getCustomerAccount() {
+		return customerAccount;
 	}
-	public void setAccount(String account) {
-		this.account = account;
+	public void setCustomerAccount(BankAccount customerAccount) {
+		this.customerAccount = customerAccount;
 	}
 	@Override
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", password=" + password
-				+ ", emailId=" + emailId + ", address=" + address + ", dob=" + dob + ", account=" + account + "]";
+				+ ", emailId=" + emailId + ", address=" + address + ", customerDateOfBirth=" + customerDateOfBirth
+				+ ", customerAccount=" + customerAccount + "]";
 	}
-	
-
 }
+	
